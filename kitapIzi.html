@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası | Kitap İzi (BookTrace)</title>
+    <title>Hesap Silme ve Gizlilik Politikası | Kitap İzi (BookTrace)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -88,7 +88,7 @@
             margin-bottom: 12px;
         }
 
-        ul {
+        ul, ol {
             margin-left: 20px;
             margin-bottom: 16px;
         }
@@ -98,11 +98,24 @@
         }
 
         .highlight-box {
-            background-color: #F0F4FY;
+            background-color: #F0F4FF;
             border-left: 4px solid var(--primary);
-            padding: 16px 20px;
+            padding: 20px;
             border-radius: 0 8px 8px 0;
             margin: 20px 0;
+        }
+
+        .deletion-box {
+            background-color: #FFF8E1;
+            border: 2px solid var(--accent);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+        }
+
+        .deletion-box h3 {
+            color: #B78103;
+            margin-bottom: 12px;
         }
 
         footer {
@@ -127,44 +140,53 @@
 
     <header>
         <h1>Kitap İzi (BookTrace)</h1>
-        <p>Gizlilik Politikası / Privacy Policy</p>
+        <p>Hesap Silme Talebi & Gizlilik Politikası / Account Deletion & Privacy Policy</p>
     </header>
 
     <div class="container">
         <span class="last-updated">Son Güncelleme: 1 Ağustos 2026</span>
 
+        <!-- GOOGLE PLAY ACCOUNT DELETION SECTION -->
+        <div id="data-deletion" class="deletion-box">
+            <h3>🗑️ Kullanıcı Hesabı ve Veri Silme Talebi (Account & Data Deletion)</h3>
+            <p><strong>Geliştirici / Uygulama:</strong> Kitap İzi (BookTrace) - aerdog</p>
+            <p><strong>Kitap İzi</strong> kullanıcıları istedikleri zaman hesaplarını ve uygulama ile ilişkili tüm verilerini kalıcı olarak silme hakkına sahiptir.</p>
+            
+            <h4 style="margin-top: 14px; margin-bottom: 6px;">1. Hesabınızı ve Verilerinizi Nasıl Silebilirsiniz?</h4>
+            <ol>
+                <li><strong>E-posta ile Talep Gönderme:</strong> Hesabınıza kayıtlı e-posta adresinizden <code>aeguven@aeguven.com</code> adresine <em>"Hesap Silme Talebi"</em> konu başlığıyla bir e-posta gönderebilirsiniz. Talebiniz en geç 48 saat içinde işleme alınacaktır.</li>
+                <li><strong>Uygulama İçi Profil Ayarları:</strong> Uygulama içerisinde <em>Ayarlar ➔ Hesap ➔ Hesabımı Sil</em> adımlarını takip ederek hesabınızı anında silebilirsiniz.</li>
+            </ol>
+
+            <h4 style="margin-top: 14px; margin-bottom: 6px;">2. Silinen Veri Türleri:</h4>
+            <ul>
+                <li>Kullanıcı profil bilgileriniz (Ad, Soyad, E-posta adresi, Benzersiz Firebase ID)</li>
+                <li>Kütüphanenizdeki tüm kitap kayıtları, okuma durumları ve sayfa geçmişi</li>
+                <li>Tüm okuma kronometre seansları ve istatistik verileriniz</li>
+                <li>Kaydedilen tüm kitap notları ve alıntılarınız</li>
+            </ul>
+
+            <h4 style="margin-top: 14px; margin-bottom: 6px;">3. Saklama Süreleri ve İstisnalar:</h4>
+            <p>Silme talebiniz onaylandığında tüm verileriniz Firebase sunucularımızdan <strong>kalıcı olarak tamamen silinir</strong>. Yasal zorunluluklar veya sahtekarlık önleme amaçları dışında hiçbir veri saklanmaz.</p>
+        </div>
+
         <div class="highlight-box">
-            <p><strong>Kitap İzi ("Biz", "Uygulamamız")</strong> olarak gizliliğinize ve kişisel verilerinizin korunmasına büyük önem veriyoruz. Bu politika, Kitap İzi mobil uygulamasını kullanırken verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+            <p><strong>Kitap İzi ("Biz", "Uygulamamız")</strong> olarak gizliliğinize ve kişisel verilerinizin korunmasına büyük önem veriyoruz.</p>
         </div>
 
         <h2>1. Toplanan Bilgiler</h2>
         <p>Uygulamamızı kullanırken aşağıdaki veri türleri işlenebilir:</p>
         <ul>
-            <li><strong>Kullanıcı Hesap Bilgileri:</strong> Google ile Giriş Yap veya E-posta/Şifre kullandığınızda Firebase Authentication tarafından sağlanan temel profil bilgileriniz (E-posta adresi, ad-soyad, benzersiz kullanıcı kimliği).</li>
-            <li><strong>Kütüphane ve Okuma Verileri:</strong> Eklediğiniz kitaplar, okuma durumları (Okuyorum, Okudum vb.), sayfa sayıları, günlük okuma kronometre süreleri, kitap notları ve alıntılarınız.</li>
+            <li><strong>Kullanıcı Hesap Bilgileri:</strong> Google ile Giriş Yap veya E-posta/Şifre kullandığınızda sağlanan profil bilgileriniz.</li>
+            <li><strong>Kütüphane Verileri:</strong> Eklediğiniz kitaplar, okuma durumları, kronometre seansları ve notlarınız.</li>
             <li><strong>Görsel Veriler:</strong> Kamera veya galerinizden kitap kapağı olarak seçtiğiniz görseller.</li>
         </ul>
 
-        <h2>2. Cihaz İzinleri ve Kullanım Amaçları</h2>
-        <p>Uygulamamız işlevselliğini sağlamak amacıyla aşağıdaki izinleri talep edebilir:</p>
-        <ul>
-            <li><strong>Kamera İzni (CAMERA):</strong> Kitapların ISBN barkodlarını taramak ve kitap kapağı fotoğrafı çekebilmeniz için kullanılır. Kamera görüntüsü canlı işlenir ve sunucularımıza canlı video akışı aktarılmaz.</li>
-            <li><strong>Galeri / Medya İzni:</strong> Cihazınızın hafızasındaki resimlerden kitap kapağı seçebilmeniz için kullanılır.</li>
-        </ul>
+        <h2>2. Reklam Hizmetleri (Google AdMob)</h2>
+        <p>Uygulamamız içerisinde Google AdMob reklam kütüphanesi kullanılmaktadır. AdMob anonim reklam kimliklerini işleyebilir.</p>
 
-        <h2>3. Reklam Hizmetleri (Google AdMob)</h2>
-        <p>Uygulamamız içerisinde Google AdMob reklam kütüphanesi kullanılmaktadır. AdMob, kişiselleştirilmiş veya kişiselleştirilmemiş reklamlar sunmak amacıyla cihaz reklam kimliği (Advertising ID) ve anonim istatistiki verileri işleyebilir.</p>
-        <p>Google'ın reklam verilerini nasıl kullandığı hakkında detaylı bilgi için <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Reklam Gizlilik Politikası</a>'nı ziyaret edebilirsiniz.</p>
-
-        <h2>4. Veri Depolama ve Güvenlik</h2>
-        <p>Tüm verileriniz endüstri standardı güvenlik protokollerine sahip Google Firebase (Firestore ve Authentication) bulut altyapısında ve cihazınızın yerel veritabanında (Room SQLite) güvenle saklanır. Verileriniz hiçbir koşulda üçüncü taraflara satılmaz veya pazarlama amacıyla paylaşılmaz.</p>
-
-        <h2>5. Veri Silme ve Kullanıcı Hakları</h2>
-        <p>Kullanıcılar diledikleri zaman hesaplarını ve uygulama içerisine kaydettikleri kütüphane verilerini sildirme hakkına sahiptir. Hesap silme talepleriniz için bizimle iletişime geçebilirsiniz.</p>
-
-        <h2>6. İletişim</h2>
-        <p>Gizlilik politikamız ile ilgili soru, görüş veya veri silme talepleriniz için bizimle iletişime geçebilirsiniz:</p>
-        <p><strong>E-posta:</strong> aeguven@aeguven.com </p>
+        <h2>3. İletişim</h2>
+        <p><strong>E-posta:</strong> aeguven@aeguven.com</p>
     </div>
 
     <footer>
